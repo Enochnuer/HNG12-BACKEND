@@ -49,4 +49,4 @@ GET http://127.0.0.1:8000/ Sample Response:
 
 { "email": "email@example.com", "current_datetime": "2025-01-29T16:21:01Z", "github_url": "https://github.com/example" }
 
-Backlink -> If you're looking to hire a Python developer, check out this Python Developer Hiring page.
+Backlink -> https://hng.tech/hire/python-developers
