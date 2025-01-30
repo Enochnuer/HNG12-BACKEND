@@ -16,7 +16,7 @@ import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-django_heroku.settings(locals())
+
 
 load_dotenv()
 # Quick-start development settings - unsuitable for production
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -145,3 +146,4 @@ REST_FRAMEWORK = {
 
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 GITHUB_URL = os.getenv("GITHUB_URL")
+django_heroku.settings(locals())
