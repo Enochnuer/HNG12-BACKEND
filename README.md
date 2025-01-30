@@ -30,10 +30,10 @@ Run the application: Now, you can run the Django application locally:
 
 Access the API:
 
-Your application should now be running at http://127.0.0.1:8000/. The api endpoint can be accessed at: http://127.0.0.1:8000/
+Your application should now be running at http://127.0.0.1:8000/. The api endpoint can be accessed at: http://127.0.0.1:8000/api/
 
 
-API Documentation: -> Endpoint: / Request -> Method: GET -> URL: http://127.0.0.1:8000/
+API Documentation: -> Endpoint: /api/ Request -> Method: GET -> URL: http://127.0.0.1:8000/api/
 
 No request body is needed. Simply send a GET request to the endpoint.
 
@@ -45,7 +45,7 @@ Response Format: The response will be in JSON format and will include the follow
 
 Example Usage -> To get the information, send a GET request to the following URL:
 
-GET http://127.0.0.1:8000/ Sample Response:
+GET http://127.0.0.1:8000/api/  Sample Response:
 
 { "email": "email@example.com", "current_datetime": "2025-01-29T16:21:01Z", "github_url": "https://github.com/example" }
 
