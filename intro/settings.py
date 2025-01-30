@@ -139,8 +139,9 @@ USE_X_FORWARDED_HOST = True
 REST_FRAMEWORK = {
     
     'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
-        'rest_framework.renderers.JSONRenderer', # JSON fallback for API clients
+        
     ],
 }
 
